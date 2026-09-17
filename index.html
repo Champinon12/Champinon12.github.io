@@ -1,0 +1,638 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta name="theme-color" content="#f5f5f7" media="(prefers-color-scheme: light)" />
+  <meta name="theme-color" content="#000000" media="(prefers-color-scheme: dark)" />
+  <title>Mucha Ensalada — Menú Oficial y Pedidos</title>
+  <meta name="description" content="Ensalada completa por $120 MXN con base y vegetales asegurados, 1 pechuga de pollo asada, 2 proteínas más y 2 complementos. Pide por WhatsApp o paga con Apple Pay." />
+
+  <!-- Apple Web App Meta -->
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+  <meta name="apple-mobile-web-app-title" content="Mucha Ensalada" />
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- Apple Global Navigation Bar -->
+  <header class="apple-nav" role="banner">
+    <div class="apple-container apple-nav-inner">
+      <a href="#" class="apple-brand" aria-label="Mucha Ensalada Inicio">
+        <div class="apple-brand-icon" aria-hidden="true">🥗</div>
+        <span>Mucha Ensalada</span>
+      </a>
+
+      <nav class="apple-nav-links" aria-label="Navegación principal">
+        <a href="#configurador" class="apple-nav-link">Armar Ensalada</a>
+        <a href="#menu-oficial" class="apple-nav-link">Menú Oficial</a>
+        <a href="#filosofia" class="apple-nav-link">Filosofía</a>
+        <a href="#bolsa" class="apple-nav-link">Tu Bolsa</a>
+        <a href="#contacto" class="apple-nav-link">Contacto</a>
+      </nav>
+
+      <div class="apple-nav-actions">
+        <button type="button" class="theme-toggle-btn" id="themeToggleBtn" aria-label="Cambiar tema">
+          <span id="themeIcon">🌙</span>
+        </button>
+
+        <button type="button" class="apple-bag-trigger" aria-label="Abrir Bolsa de compras">
+          <span>Bolsa</span>
+          <span class="bag-count-pill" id="navBagCount">0</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Apple Hero Section -->
+  <section class="apple-hero" aria-labelledby="heroHeadline">
+    <div class="apple-container">
+      <div class="hero-eyebrow">
+        <span class="hero-pulse" aria-hidden="true"></span>
+        <span>MENÚ OFICIAL · INGREDIENTES FRESCOS DEL DÍA</span>
+      </div>
+
+      <h1 class="hero-headline" id="heroHeadline">
+        Mucha frescura.<br />
+        <span class="hero-headline-gradient">Tu ensalada completa por solo $120.</span>
+      </h1>
+
+      <p class="hero-subheadline">
+        Cada ensalada incluye de forma <strong>asegurada</strong> nuestra base fresca y 7 ingredientes con pasta. Eliges <strong>1 pechuga de pollo</strong>, <strong>2 proteínas más</strong> y <strong>2 complementos</strong>.
+      </p>
+
+      <div>
+        <div class="hero-price-tag">
+          <span>Ensalada Completa</span>
+          <strong>$120.00 MXN</strong>
+          <span>· Base + Vegetales Asegurados · 3 Proteínas · 2 Complementos</span>
+        </div>
+      </div>
+
+      <div class="hero-cta-group">
+        <a href="#configurador" class="apple-btn apple-btn-primary">
+          <span>Personalizar en el configurador</span>
+          <span aria-hidden="true">↓</span>
+        </a>
+        <a href="#menu-oficial" class="apple-btn apple-btn-secondary">
+          <span>Ver desglose del menú</span>
+          <span aria-hidden="true">›</span>
+        </a>
+      </div>
+
+      <!-- Specs Ribbon -->
+      <div class="apple-specs-ribbon" role="list">
+        <div class="spec-tile" role="listitem">
+          <div class="spec-icon" aria-hidden="true">🥬</div>
+          <div class="spec-title">Base & Vegetales Asegurados</div>
+          <div class="spec-desc">Lechuga, espinaca y 7 vegetales frescos con pasta siempre incluidos.</div>
+        </div>
+        <div class="spec-tile" role="listitem">
+          <div class="spec-icon" aria-hidden="true">🍗</div>
+          <div class="spec-title">1 Tipo de Pechuga</div>
+          <div class="spec-desc">Pollo marinado al pastor, a la leña, chipotle o finas hierbas.</div>
+        </div>
+        <div class="spec-tile" role="listitem">
+          <div class="spec-icon" aria-hidden="true">🥚</div>
+          <div class="spec-title">2 Proteínas Más</div>
+          <div class="spec-desc">Elige 2 opciones entre huevo, queso panela, atún o salmón (+ $80).</div>
+        </div>
+        <div class="spec-tile" role="listitem">
+          <div class="spec-icon" aria-hidden="true">🥜</div>
+          <div class="spec-title">2 Complementos</div>
+          <div class="spec-desc">Crutones, arándanos, nuez de la india, almendras, nuez o pasas.</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Menu Overview Showcase -->
+  <section class="apple-container reveal-item" id="menu-oficial" style="margin-bottom: 72px;">
+    <div class="section-header">
+      <div class="section-eyebrow">Carta y Reglas Oficiales</div>
+      <h2 class="section-title">El Menú Mucha Ensalada</h2>
+      <p class="section-desc">Estructura oficial del volante por $120 MXN.</p>
+    </div>
+
+    <div class="apple-specs-ribbon" style="grid-template-columns: repeat(3, 1fr); margin-bottom: 0;">
+      <!-- Card 1 -->
+      <div class="spec-tile" style="padding: 24px;">
+        <div class="spec-icon">🌱</div>
+        <div class="spec-title" style="font-size: 18px; margin-bottom: 8px;">Asegurados en cada ensalada</div>
+        <p class="spec-desc" style="font-size: 14px; line-height: 1.6;">
+          <strong>Base:</strong> Lechuga italiana + Espinaca baby.<br />
+          <strong>Ingredientes:</strong> Pepino, Zanahoria, Pimiento morrón, Betabel, Tomates cherry, Col morada y Pasta.
+        </p>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="spec-tile" style="padding: 24px;">
+        <div class="spec-icon">🍗</div>
+        <div class="spec-title" style="font-size: 18px; margin-bottom: 8px;">3 Proteínas (1 Pechuga + 2 Más)</div>
+        <p class="spec-desc" style="font-size: 14px; line-height: 1.6;">
+          <strong>1 Pechuga:</strong> Pastor · Leña · Chipotle · Finas hierbas.<br />
+          <strong>2 Proteínas más:</strong> Huevo hervido · Queso panela · Atún · Salmón (+ $80).
+        </p>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="spec-tile" style="padding: 24px;">
+        <div class="spec-icon">✨</div>
+        <div class="spec-title" style="font-size: 18px; margin-bottom: 8px;">Complementos & Agrega</div>
+        <p class="spec-desc" style="font-size: 14px; line-height: 1.6;">
+          <strong>2 Complementos:</strong> Crutones · Arándanos · Nuez de la india · Almendras · Nuez · Pasas.<br />
+          <strong>Agrega (+ $15):</strong> Fresas · Uvas · Aguacate · Piña · Manzana · Mango · Kiwi.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Interactive Configurator & Bag Layout -->
+  <main class="apple-container apple-workspace-layout" id="configurador">
+    
+    <!-- Left Column: Configurator -->
+    <section class="configurator-card reveal-item" aria-labelledby="builderHeading">
+      <div class="section-header" style="margin-bottom: 24px;">
+        <div class="section-eyebrow">Configurador Oficial</div>
+        <h2 class="section-title" id="builderHeading" style="font-size: 28px;">Diseña tu Ensalada</h2>
+        <p class="section-desc" style="font-size: 15px;">La base y los vegetales vienen asegurados. Elige tus proteínas y complementos.</p>
+      </div>
+
+      <form id="saladForm" onsubmit="return false;">
+
+        <!-- CAJA DE INGREDIENTES ASEGURADOS -->
+        <div class="asegurados-box">
+          <div class="group-header" style="margin-bottom: 8px;">
+            <div>
+              <div class="group-step-pill">Incluido en los $120 MXN</div>
+              <h3 class="group-title">Base e Ingredientes Asegurados</h3>
+            </div>
+            <span class="group-badge status-badge-green">✓ Siempre Incluidos</span>
+          </div>
+
+          <p class="option-subtext">
+            Tu ensalada cuenta con la frescura completa de todos estos ingredientes garantizados:
+          </p>
+
+          <div class="asegurados-grid">
+            <div class="asegurado-chip"><span class="chip-dot"></span> 🥬 Lechuga italiana</div>
+            <div class="asegurado-chip"><span class="chip-dot"></span> 🍃 Espinaca baby</div>
+            <div class="asegurado-chip"><span class="chip-dot"></span> 🥒 Pepino</div>
+            <div class="asegurado-chip"><span class="chip-dot"></span> 🥕 Zanahoria</div>
+            <div class="asegurado-chip"><span class="chip-dot"></span> 🫑 Pimiento morrón</div>
+            <div class="asegurado-chip"><span class="chip-dot"></span> 🟣 Betabel</div>
+            <div class="asegurado-chip"><span class="chip-dot"></span> 🍅 Tomates cherry</div>
+            <div class="asegurado-chip"><span class="chip-dot"></span> 🥗 Col morada</div>
+            <div class="asegurado-chip"><span class="chip-dot"></span> 🍝 Pasta al dente</div>
+          </div>
+
+          <p class="asegurados-note">
+            * <em>¿Deseas omitir algo por gusto o alergia (ej. sin betabel, sin pasta)?</em> Indícalo en la sección de <strong>Notas para la Cocina</strong> al final del configurador.
+          </p>
+        </div>
+
+        <!-- PASO 1: 1 TIPO DE PECHUGA DE POLLO ASADA -->
+        <div class="config-group">
+          <div class="group-header">
+            <div>
+              <div class="group-step-pill">Paso 1 · Pechuga de Pollo</div>
+              <h3 class="group-title">Elige 1 Tipo de Pechuga Asada</h3>
+            </div>
+            <span class="group-badge">1 obligatoria</span>
+          </div>
+
+          <p class="option-subtext" style="margin-bottom: 14px;">
+            Solo se puede elegir 1 tipo de pechuga con tu marinado preferido:
+          </p>
+
+          <div class="apple-options-grid cols-2" data-group="pechuga">
+            <label class="apple-option-card">
+              <input type="radio" name="pechuga" value="Pechuga asada al pastor" checked />
+              <div class="option-top-row">
+                <span class="option-label-text">Pechuga asada al pastor</span>
+                <span class="apple-indicator" aria-hidden="true"></span>
+              </div>
+              <span class="option-subtext">Marinado tradicional en adobo casero con achiote</span>
+            </label>
+
+            <label class="apple-option-card">
+              <input type="radio" name="pechuga" value="Pechuga asada a la leña" />
+              <div class="option-top-row">
+                <span class="option-label-text">Pechuga asada a la leña</span>
+                <span class="apple-indicator" aria-hidden="true"></span>
+              </div>
+              <span class="option-subtext">Ahumado suave a las brasas y muy jugoso</span>
+            </label>
+
+            <label class="apple-option-card">
+              <input type="radio" name="pechuga" value="Pechuga asada al chipotle" />
+              <div class="option-top-row">
+                <span class="option-label-text">Pechuga asada al chipotle</span>
+                <span class="apple-indicator" aria-hidden="true"></span>
+              </div>
+              <span class="option-subtext">Salsa ahumada artesanal con toque especiado</span>
+            </label>
+
+            <label class="apple-option-card">
+              <input type="radio" name="pechuga" value="Pechuga asada finas hierbas" />
+              <div class="option-top-row">
+                <span class="option-label-text">Pechuga asada finas hierbas</span>
+                <span class="apple-indicator" aria-hidden="true"></span>
+              </div>
+              <span class="option-subtext">Romero, tomillo, orégano y aceite de oliva</span>
+            </label>
+          </div>
+        </div>
+
+        <!-- PASO 2: 2 PROTEINAS MAS (UNA DE CADA UNA) -->
+        <div class="config-group">
+          <div class="group-header">
+            <div>
+              <div class="group-step-pill">Paso 2 · Proteínas Adicionales</div>
+              <h3 class="group-title">Elige 2 Proteínas Más</h3>
+            </div>
+            <span class="group-badge" id="otras-proteinas-count">0/2</span>
+          </div>
+
+          <p class="option-subtext" style="margin-bottom: 14px;">
+            Elige exactamente 2 proteínas diferentes para completar tus 3 proteínas en total (Salmón añade +$80 MXN):
+          </p>
+
+          <div class="apple-options-grid cols-2" data-group="otras-proteinas" data-limit="2">
+            <label class="apple-option-card">
+              <input type="checkbox" name="otras_proteinas" value="Huevo hervido" />
+              <div class="option-top-row">
+                <span class="option-label-text">Huevo hervido</span>
+                <span class="apple-indicator" aria-hidden="true"></span>
+              </div>
+              <span class="option-subtext">Huevo cocido de granja rebanado</span>
+            </label>
+
+            <label class="apple-option-card">
+              <input type="checkbox" name="otras_proteinas" value="Queso panela" />
+              <div class="option-top-row">
+                <span class="option-label-text">Queso panela</span>
+                <span class="apple-indicator" aria-hidden="true"></span>
+              </div>
+              <span class="option-subtext">Queso panela fresco en cubos suaves</span>
+            </label>
+
+            <label class="apple-option-card">
+              <input type="checkbox" name="otras_proteinas" value="Atún" />
+              <div class="option-top-row">
+                <span class="option-label-text">Atún</span>
+                <span class="apple-indicator" aria-hidden="true"></span>
+              </div>
+              <span class="option-subtext">Lomo de atún claro en agua, ligero y proteico</span>
+            </label>
+
+            <label class="apple-option-card">
+              <input type="checkbox" name="otras_proteinas" value="Salmón a la plancha (+$80)" data-price="80" />
+              <div class="option-top-row">
+                <span class="option-label-text">Salmón a la plancha</span>
+                <span class="option-extra-chip">+$80</span>
+              </div>
+              <span class="option-subtext">Filete sellado con sal de grano marina</span>
+            </label>
+          </div>
+
+          <div class="limit-error" id="otras-proteinas-limit" aria-live="polite"></div>
+        </div>
+
+        <!-- PASO 3: 2 COMPLEMENTOS -->
+        <div class="config-group">
+          <div class="group-header">
+            <div>
+              <div class="group-step-pill">Paso 3 · Complementos</div>
+              <h3 class="group-title">Elige 2 Complementos</h3>
+            </div>
+            <span class="group-badge" id="comp-count">0/2</span>
+          </div>
+
+          <p class="option-subtext" style="margin-bottom: 14px;">
+            Elige hasta 2 complementos incluidos (uno de cada uno):
+          </p>
+
+          <div class="apple-options-grid cols-3" data-group="complementos" data-limit="2">
+            <label class="apple-option-card">
+              <input type="checkbox" name="complementos" value="Crutones" />
+              <div class="option-top-row">
+                <span class="option-label-text">Crutones</span>
+                <span class="apple-indicator" aria-hidden="true"></span>
+              </div>
+              <span class="option-subtext">Pan crujiente horneado con ajo</span>
+            </label>
+
+            <label class="apple-option-card">
+              <input type="checkbox" name="complementos" value="Arándanos" />
+              <div class="option-top-row">
+                <span class="option-label-text">Arándanos</span>
+                <span class="apple-indicator" aria-hidden="true"></span>
+              </div>
+              <span class="option-subtext">Deshidratados, jugosos y dulces</span>
+            </label>
+
+            <label class="apple-option-card">
+              <input type="checkbox" name="complementos" value="Nuez de la india" />
+              <div class="option-top-row">
+                <span class="option-label-text">Nuez de la India</span>
+                <span class="apple-indicator" aria-hidden="true"></span>
+              </div>
+              <span class="option-subtext">Castaña de cajú tostada premium</span>
+            </label>
+
+            <label class="apple-option-card">
+              <input type="checkbox" name="complementos" value="Almendras" />
+              <div class="option-top-row">
+                <span class="option-label-text">Almendras</span>
+                <span class="apple-indicator" aria-hidden="true"></span>
+              </div>
+              <span class="option-subtext">Fileteadas al natural</span>
+            </label>
+
+            <label class="apple-option-card">
+              <input type="checkbox" name="complementos" value="Nuez" />
+              <div class="option-top-row">
+                <span class="option-label-text">Nuez</span>
+                <span class="apple-indicator" aria-hidden="true"></span>
+              </div>
+              <span class="option-subtext">Nuez pecana en trozos crocantes</span>
+            </label>
+
+            <label class="apple-option-card">
+              <input type="checkbox" name="complementos" value="Pasas" />
+              <div class="option-top-row">
+                <span class="option-label-text">Pasas</span>
+                <span class="apple-indicator" aria-hidden="true"></span>
+              </div>
+              <span class="option-subtext">Uvas pasas dulces tradicionales</span>
+            </label>
+          </div>
+
+          <div class="limit-error" id="comp-limit" aria-live="polite"></div>
+        </div>
+
+        <!-- PASO 4: AGREGA (+$15 c/u) -->
+        <div class="config-group">
+          <div class="group-header">
+            <div>
+              <div class="group-step-pill">Paso 4 · Agrega</div>
+              <h3 class="group-title">Agrega Frutas y Aguacate</h3>
+            </div>
+            <span class="group-badge">+$15.00 MXN c/u</span>
+          </div>
+
+          <div class="apple-options-grid cols-3" data-group="agrega">
+            <label class="apple-option-card">
+              <input type="checkbox" name="agrega" value="Fresas" data-price="15" />
+              <div class="option-top-row">
+                <span class="option-label-text">Fresas</span>
+                <span class="option-extra-chip">+$15</span>
+              </div>
+              <span class="option-subtext">Fresas rebanadas jugosas</span>
+            </label>
+
+            <label class="apple-option-card">
+              <input type="checkbox" name="agrega" value="Uvas" data-price="15" />
+              <div class="option-top-row">
+                <span class="option-label-text">Uvas</span>
+                <span class="option-extra-chip">+$15</span>
+              </div>
+              <span class="option-subtext">Uvas dulces sin semilla</span>
+            </label>
+
+            <label class="apple-option-card">
+              <input type="checkbox" name="agrega" value="Aguacate" data-price="15" />
+              <div class="option-top-row">
+                <span class="option-label-text">Aguacate</span>
+                <span class="option-extra-chip">+$15</span>
+              </div>
+              <span class="option-subtext">Aguacate Hass cremoso</span>
+            </label>
+
+            <label class="apple-option-card">
+              <input type="checkbox" name="agrega" value="Piña" data-price="15" />
+              <div class="option-top-row">
+                <span class="option-label-text">Piña</span>
+                <span class="option-extra-chip">+$15</span>
+              </div>
+              <span class="option-subtext">Piña miel en cubos dulces</span>
+            </label>
+
+            <label class="apple-option-card">
+              <input type="checkbox" name="agrega" value="Manzana verde" data-price="15" />
+              <div class="option-top-row">
+                <span class="option-label-text">Manzana Verde</span>
+                <span class="option-extra-chip">+$15</span>
+              </div>
+              <span class="option-subtext">Granny Smith crujiente y ácida</span>
+            </label>
+
+            <label class="apple-option-card">
+              <input type="checkbox" name="agrega" value="Mango" data-price="15" />
+              <div class="option-top-row">
+                <span class="option-label-text">Mango</span>
+                <span class="option-extra-chip">+$15</span>
+              </div>
+              <span class="option-subtext">Mango aromático de temporada</span>
+            </label>
+
+            <label class="apple-option-card">
+              <input type="checkbox" name="agrega" value="Kiwi" data-price="15" />
+              <div class="option-top-row">
+                <span class="option-label-text">Kiwi</span>
+                <span class="option-extra-chip">+$15</span>
+              </div>
+              <span class="option-subtext">Rebanadas frescas ricas en vitamina C</span>
+            </label>
+          </div>
+        </div>
+
+        <!-- PASO 5: NOTAS -->
+        <div class="config-group">
+          <div class="group-header">
+            <div>
+              <div class="group-step-pill">Paso 5 · Indicaciones</div>
+              <h3 class="group-title">Notas para la Cocina</h3>
+            </div>
+            <span class="group-badge">Opcional</span>
+          </div>
+          <textarea id="notasInput" class="apple-textarea" placeholder="Indicaciones especiales o ingredientes que desees omitir (ej. sin betabel, sin pasta, cubiertos ecológicos...)"></textarea>
+        </div>
+
+        <!-- CONFIGURATOR FOOTER SUMMARY -->
+        <div class="config-footer">
+          <div class="config-summary">
+            <span class="config-summary-label">Total de esta ensalada</span>
+            <span class="config-summary-price" id="builderTotal">$120.00 MXN</span>
+          </div>
+
+          <button type="button" id="addToCartBtn" class="apple-btn apple-btn-green" style="padding: 14px 28px; font-size: 16px;">
+            <span>Agregar a la Bolsa</span>
+            <span aria-hidden="true">+</span>
+          </button>
+        </div>
+      </form>
+    </section>
+
+    <!-- Right Column: Apple Store Bag / Cart -->
+    <aside class="apple-bag-card reveal-item" id="bolsa" aria-labelledby="bagTitle">
+      <div class="bag-header">
+        <h2 class="bag-title" id="bagTitle">
+          <span>Tu Bolsa</span>
+          <span class="bag-count-pill" id="bagHeaderCount">0</span>
+        </h2>
+        <button type="button" class="bag-remove-btn" id="clearBagBtn">Vaciar</button>
+      </div>
+
+      <!-- Empty State -->
+      <div class="bag-empty-state" id="bagEmptyState">
+        <div class="bag-empty-icon" aria-hidden="true">🛍</div>
+        <div class="bag-empty-title">Tu bolsa está vacía</div>
+        <p class="bag-empty-desc">Configura tu ensalada de $120 y agrégala para enviar tu pedido por WhatsApp o pagar con Apple Pay.</p>
+      </div>
+
+      <!-- Items List -->
+      <div class="bag-items-list" id="bagItemsList" style="display: none;"></div>
+
+      <!-- Summary & Actions -->
+      <div class="bag-checkout-section">
+        <div class="bag-summary-row">
+          <span>Subtotal</span>
+          <strong id="bagSubtotal">$0.00 MXN</strong>
+        </div>
+        <div class="bag-summary-row">
+          <span>Entrega / Envío</span>
+          <span>A convenir</span>
+        </div>
+        <div class="bag-summary-row total">
+          <span>Total</span>
+          <span id="bagTotal">$0.00 MXN</span>
+        </div>
+
+        <div class="bag-action-buttons">
+          <!-- Apple Pay Button -->
+          <button type="button" id="applePayBtn" class="apple-btn apple-btn-applepay" disabled aria-label="Pagar con Apple Pay">
+            <span style="font-size: 16px;"></span>
+            <span>Pagar con Apple Pay</span>
+          </button>
+
+          <!-- WhatsApp Button -->
+          <button type="button" id="whatsappCheckoutBtn" class="apple-btn apple-btn-whatsapp" disabled aria-label="Hacer pedido por WhatsApp">
+            <span aria-hidden="true">💬</span>
+            <span>Enviar Pedido por WhatsApp</span>
+          </button>
+        </div>
+
+        <p class="bag-note">
+          Pedidos directos vía WhatsApp a los teléfonos oficiales: <strong>55 78 98 00 60</strong> y <strong>55 64 26 69 06</strong>.
+        </p>
+      </div>
+    </aside>
+  </main>
+
+  <!-- Apple Floating Bottom Dock -->
+  <aside class="apple-floating-dock" id="appleFloatingDock" role="region" aria-label="Resumen rápido">
+    <div class="dock-total-wrapper">
+      <span class="dock-total-label">En Bolsa (<span id="dockBagCount">0</span>)</span>
+      <span class="dock-total-val" id="dockBagTotal">$0.00 MXN</span>
+    </div>
+    <div class="dock-actions">
+      <button type="button" class="apple-btn apple-btn-primary" id="dockBagTrigger" style="padding: 8px 14px; font-size: 13px;">
+        <span>Ver Bolsa</span>
+      </button>
+      <button type="button" class="apple-btn apple-btn-whatsapp" id="dockWhatsappBtn" style="padding: 8px 14px; font-size: 13px;">
+        <span>Pedir</span>
+      </button>
+    </div>
+  </aside>
+
+  <!-- Bento Section (Philosophy & Freshness) -->
+  <section class="bento-section reveal-item" id="filosofia" aria-labelledby="philosophyTitle">
+    <div class="apple-container">
+      <div class="section-header">
+        <div class="section-eyebrow">Compromiso Mucha Ensalada</div>
+        <h2 class="section-title" id="philosophyTitle">Hecho con amor y frescura</h2>
+        <p class="section-desc">Cuidamos cada ingrediente desde el corte hasta la entrega en tu mesa.</p>
+      </div>
+
+      <div class="bento-grid">
+        <article class="bento-tile span-2">
+          <div class="bento-icon" aria-hidden="true">🌱</div>
+          <h3 class="bento-title">Vegetales y base siempre incluidos</h3>
+          <p class="bento-desc">
+            Lechuga italiana, espinaca baby y 7 vegetales con pasta fresca al dente asegurados en cada tazón. Sin costos ocultos.
+          </p>
+        </article>
+
+        <article class="bento-tile">
+          <div class="bento-icon" aria-hidden="true">🍗</div>
+          <h3 class="bento-title">Proteínas a las brasas</h3>
+          <p class="bento-desc">
+            1 pechuga de pollo marinada al pastor, leña, chipotle o finas hierbas, más 2 proteínas complementarias a tu elección.
+          </p>
+        </article>
+
+        <article class="bento-tile">
+          <div class="bento-icon" aria-hidden="true">🥜</div>
+          <h3 class="bento-title">Nuez de la India & Semillas</h3>
+          <p class="bento-desc">
+            Complementos selectos: nuez de la india, arándanos, almendras y crutones dorados para darle ese toque crocante inigualable.
+          </p>
+        </article>
+
+        <article class="bento-tile span-2">
+          <div class="bento-icon" aria-hidden="true">📱</div>
+          <h3 class="bento-title">Atención directa e inmediata</h3>
+          <p class="bento-desc">
+            Sin comisiones abusivas de apps de terceros. Escríbenos directamente por WhatsApp y tu orden se preparará al instante para entrega o recolección.
+          </p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="apple-footer" id="contacto" role="contentinfo">
+    <div class="apple-container">
+      <div class="footer-top">
+        <div>
+          <div class="footer-brand-title">Mucha Ensalada</div>
+          <p>Ensaladas gourmet completas por $120 MXN.</p>
+        </div>
+
+        <div class="footer-contacts">
+          <div class="footer-brand-title">Pedidos y Reservas</div>
+          <p>
+            WhatsApp 1: <a href="https://wa.me/525578980060" target="_blank" rel="noopener">55 78 98 00 60</a>
+            <br />
+            WhatsApp 2: <a href="https://wa.me/525564266906" target="_blank" rel="noopener">55 64 26 69 06</a>
+          </p>
+        </div>
+
+        <div>
+          <div class="footer-brand-title">Métodos de Pago</div>
+          <p>Apple Pay · Efectivo · Transferencia bancaria directa</p>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>© 2026 Mucha Ensalada. Todos los derechos reservados. Precios en Pesos Mexicanos (MXN).</p>
+        <p>Diseño inspirado en los estándares de Apple Web & Human Interface Guidelines.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Dynamic Island Toast -->
+  <div class="apple-toast" id="appleToast" role="status" aria-live="polite">
+    <span class="toast-icon" id="toastIcon">✓</span>
+    <span id="toastMessage">Ensalada agregada a tu Bolsa</span>
+  </div>
+
+  <!-- Interactive JavaScript Engine -->
+  <script src="app.js"></script>
+</body>
+</html>
